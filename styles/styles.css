@@ -157,6 +157,10 @@ footer{
     color: #ebe6e6;
 }
 
+footer img{
+    width: 50px;
+}
+
 span{
     padding: 10px;
     padding-top: 0px;

@@ -158,11 +158,16 @@ footer{
 }
 
 footer img{
-    width: 50px;
+    vertical-align: middle;
+    margin-left: 5px;
 }
 
 span{
     padding: 10px;
     padding-top: 0px;
 
+}
+
+figure{
+    padding-left: 155px;
 }

@@ -31,9 +31,17 @@ function filterCourses(category) {
 
     // Update the container's inner HTML based on the selected category
     container.innerHTML = courses[category] || courses.All;
+
+
 }
 
-// Initialize by displaying all courses on page load
-window.onload = () => {
-    filterCourses('All');
-};
+document.addEventListener('DOMContentLoaded', () => {
+    const menuToggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
+
+    menuToggle.addEventListener('click', () => {
+        menu.classList.toggle('show');
+    });
+});
+
+

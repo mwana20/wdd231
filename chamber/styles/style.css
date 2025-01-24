@@ -51,7 +51,7 @@ a:hover {
 }
 
 /* Menu Toggle Button */
-.menu-toggle {
+#menu-toggle {
   display: none;
   font-size: 24px;
   background: none;
@@ -61,10 +61,34 @@ a:hover {
 
 /* Mobile Menu Styles */
 @media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-  }
+  #menu-toggle {
+    display: inline-block;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: #000;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
 
+#menu-toggle:hover{
+    background: #fff;
+}
+
+/* Navigation - Mobile First */
+#main-nav {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #040924;
+}
+
+#main-nav.visible {
+    display: flex;
+}
   .header nav {
     display: none;
     flex-direction: column;

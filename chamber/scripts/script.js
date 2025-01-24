@@ -46,13 +46,16 @@ document.addEventListener("DOMContentLoaded", async () => {
   document.getElementById("currentYear").textContent = new Date().getFullYear();
   document.getElementById("lastModified").textContent = document.lastModified;
 
-  // Hamburger menu functionality
-  const menuButton = document.getElementById("menuButton");
-  const navMenu = document.getElementById("navMenu");
 
-  if (menuButton && navMenu) {
-      menuButton.addEventListener("click", () => {
-          navMenu.classList.toggle("show");
-      });
-  }
+// Get references to the menu toggle button and the navigation menu
+const menuToggle = document.getElementById('menu-toggle');
+const navMenu = document.getElementById('navMenu');
+
+// Add a click event listener to the menu toggle button
+menuToggle.addEventListener('click', () => {
+    // Toggle the 'show' class on the navigation menu
+    navMenu.classList.toggle('show');
+});
+
+
 });

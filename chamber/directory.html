@@ -5,7 +5,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta property="og:title" content="Chamber Directory - Pius Mukisa Chamber of Commerce">
    <meta property="og:type" content="website" />
-   <meta property="og:image" content="https://mwana20.github.io/wdd231/chamber/images/logo.png">
+   <meta property="og:image" content="https://mwana20.github.io/wdd231/chamber/images/logo.png"/>
    <meta property="og:url" content="https://mwana20.github.io/wdd231/chamber/" />
    <meta name="facebook:card" content="summary_large_image">
    <meta name="description" content="Explore the Buenos Aires Chamber of Commerce Directory - Your gateway to local businesses and community connections">
@@ -14,17 +14,23 @@
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,400;0,700;1,500&display=swap" rel="stylesheet">
    <link rel="icon" href="images/favicon.ico">
-   <link rel="stylesheet" href="styles/styles.css">
+   <link rel="stylesheet" href="styles/style.css">
    <title>Chamber Directory - Pius Mukisa Chamber of Commerce</title>
-<     <div class="bar"></div>
-         </div>
-         <div class="nav-links" id="navLinks">
-           <a href="#" aria-label="Navigate to Home">Home</a>
-           <a href="#" aria-label="Navigate to Directory">Directory</a>
-           <a href="#" aria-label="Navigate to About Us">About</a>
-           <a href="#" aria-label="Navigate to Contact Us">Contact</a>
-         </div>
-       </nav>
+   <header class="header">
+      <img src="images/logo.png" alt="Buenos Aires Chamber Logo">
+      <nav>
+        <div class="hamburger-menu" id="hamburgerMenu">
+          <div class="bar"></div>
+          <div class="bar"></div>   
+          <div class="bar"></div>
+        </div>
+        <div class="nav-links" id="navLinks">
+          <a href="#" aria-label="Navigate to Home">Home</a>
+          <a href="#" aria-label="Navigate to Directory">Directory</a>
+          <a href="#" aria-label="Navigate to About Us">About</a>
+          <a href="#" aria-label="Navigate to Contact Us">Contact</a>
+        </div>
+      </nav>
    </header>
    <main>
        <section class="hero">
@@ -37,15 +43,8 @@
          <h2>Welcome to the Buenos Aires Chamber Directory</h2>
          <button id="toggleView" aria-label="Toggle between list and grid view">TOGGLE VIEW</button>
          <div id="memberContainer" class="list-view"></div>
-       </div>/head>
-<body>
-   <header class="header">
-       <img src="images/logo.png" alt="Buenos Aires Chamber Logo">
-       <nav>
-         <div class="hamburger-menu" id="hamburgerMenu">
-           <div class="bar"></div>
-           <div class="bar"></div>
-      
+       </div>
+
    </main>
    <footer class="footer">
        <div class="business-cards">
@@ -84,6 +83,6 @@
        </div>
        <p>&copy; <span id="currentYear"></span> | Last Updated: <span id="lastModified"></span></p>
    </footer>
-   <script src="scripts/scripts.js" defer></script>
+   <script src="scripts/script.js" defer></script>
 </body>
 </html>

@@ -36,6 +36,11 @@ a:hover {
   border-bottom: 2px solid var(--primary-color);
 }
 
+.nav-links a:hover{
+  color: #003366;
+  transition: 0.3s;
+}
+
 .header img {
   height: 50px;
 }
@@ -324,7 +329,8 @@ a:hover {
   }
 
   .nav-links a:hover {
-      background-color: rgba(0,0,0,0.05);
+      background-color: rgba(21, 27, 190, 0.375);
+      color: #000;
   }
 
   @keyframes fadeIn {

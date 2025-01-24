@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
       memberContainer.innerHTML = "";
       members.forEach((member) => {
         const card = document.createElement("div");
-        card.className = member-card `${view}`;
+        card.className = `member-card ${view}`;
         card.innerHTML = `
           <img src="images/${member.image}" alt="${member.name}" class="logo">
           <h2>${member.name}</h2>

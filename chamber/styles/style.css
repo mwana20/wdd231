@@ -9,6 +9,11 @@
 }
 
 /* Global Styles */
+.fa-rotate-by {
+  --fa-rotate-angle: 0deg; /* Use 0 degrees instead of 'none' */
+  transform: rotate(var(--fa-rotate-angle));
+}
+
 body, html {
   font-family: var(--font-family);
   margin: 0;

@@ -131,6 +131,15 @@ a:hover {
   justify-content: center;
 }
 
+#sec,.spotlight {
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
 .grid-view #memberContainer {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -254,7 +263,157 @@ a:hover {
   color: var(--secondary-color);
 }
 
+/* Home Page */
+/* Home Page */
+.section-grid {
+  display: flex;                      /* Use Flexbox to align sections */
+  flex-wrap: wrap;                    /* Allow wrapping on smaller screens */
+  gap: 20px;                          /* Space between sections */
+}
+
+.section-grid section {
+  border-radius: 10px;               /* Rounded corners for each section */
+  padding: 15px;                     /* Space inside the section */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  height: 300px;                     /* Fixed height for uniformity */
+  display: flex;                     /* Flexbox to align content inside */
+  flex-direction: column;            /* Stack the content vertically */
+  justify-content: space-between;    /* Space out content inside the section */
+}
+
+/* Background colors for sections */
+.current-events {
+  background-color: #e8f5e9;         /* Light green background for events section */
+}
+
+.current-weather {
+  background-color: #e3f2fd;         /* Light blue background for weather section */
+  width: 350px;                      /* Wider section for weather */
+}
+
+.weather-forecast {
+  background-color: #fff3e0;         /* Light orange background for forecast section */
+}
+
+/* Background color for section headers */
+.section-header {
+  background-color: #42a5f5;         /* Blue background for section header */
+  color: white;                      /* White text for contrast */
+  padding: 10px;                     /* Padding inside the header */
+  border-radius: 5px;                /* Rounded corners for the header */
+}
+
+
+  .section-grid{
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    margin-top: 10px;
+  }
+  .section-grid #weather-icon{
+    position: absolute;
+    font-size: 20px;
+    padding-left: 25px;
+  }
+  
+  .company-spotlights {
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#spotlights-container {
+    display: flex;                   /* Enable Flexbox */
+    justify-content: space-around;   /* Evenly space items */
+    align-items: flex-start;         /* Align items at the top */
+    flex-wrap: wrap;                 /* Allow items to wrap on smaller screens */
+    gap: 20px;                       /* Space between items */
+    margin-top: 20px;
+}
+
+.spotlight {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 300px;                    /* Fixed width for each spotlight */
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+}
+
+.spotlight:hover {
+    transform: translateY(-5px);     /* Hover effect */
+}
+
+/* Footer */
+.down {
+  display: flex;                     /* Enable Flexbox */
+  justify-content: space-between;    /* Space items evenly */
+  align-items: center;               /* Align items vertically */
+  padding: 20px;
+  background-color: #3333;         /* Light background */
+  flex-wrap: wrap;                   /* Allow wrapping on smaller screens */
+  gap: 20px;                         /* Add space between sections */
+  color: #000;                       /* Text color */
+}
+
+/* Styling for the footer sections */
+.contact, .inks, .copyright {
+  flex: 1;                           /* Equal space for each section */
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;                /* Center text */
+}
+
+/* Flex layout for social media icons */
+.inks ul {
+  display: flex;                     /* Make icons flex */
+  justify-content: center;           /* Center icons */
+  list-style: none;                  /* Remove bullets */
+  padding: 0;
+  gap: 15px;                         /* Space between icons */
+}
+
+.inks li a {
+  text-decoration: none;
+  font-size: 1.5rem;                 /* Icon size */
+  color: #333;                       /* Icon color */
+  transition: color 0.3s ease;       /* Smooth hover effect */
+}
+
+.inks li a:hover {
+  color: #0077cc;                    /* Color on hover */
+}
+
+
 @media (max-width: 768px) {
+  .down {
+    flex-direction: column;  /* Stack sections vertically */
+    align-items: flex-start; /* Align sections to the left */
+}
+
+.contact, .inks, .copyright {
+    width: 100%;              /* Make sections 100% width on small screens */
+    margin-bottom: 15px;      /* Space between sections */
+}
+
+ul {
+    flex-direction: column;   /* Stack the social media links vertically */
+}
+
+ul li {
+    margin-bottom: 10px;       /* Space between social media links */
+}
+  .section-grid {
+    flex-direction: column;         /* Stack sections vertically */
+    align-items: center;            /* Center sections */
+}
+
+.section-grid section {
+    width: 90%;                    /* Full width on small screens */
+}
   .header {
       display: flex;
       justify-content: space-between;
@@ -331,6 +490,14 @@ a:hover {
   .nav-links a:hover {
       background-color: rgba(21, 27, 190, 0.375);
       color: #000;
+  }
+
+  .sec {
+    flex-direction: column;
+  }
+
+  .events.weather.forecast{
+    background-color: #003366;
   }
 
   @keyframes fadeIn {

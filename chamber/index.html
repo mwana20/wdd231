@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta data -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Chamber Directory - Mubbala Phillip Chamber of Commerce">
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://mwana20.github.io/wdd231/chamber/images/logo.png"/>
+    <meta property="og:url" content="https://mwana20.github.io/wdd231/chamber/" />
+    <meta name="facebook:card" content="summary_large_image">
+    <meta name="description" content="Explore the Buenos Aires Chamber of Commerce Directory - Your gateway to local businesses and community connections">
+    <meta name="author" content="Mubbala Phillip">   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,400;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Chamber Directory - MUbbala Phillip Chamber of Commerce</title>
+
+
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spolights.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo of P Chamber of Commerce">
+
+        </div>
+        <nav class="nav-menu">
+            <div class="hamburger-menu" id="hamburgerMenu">
+                <div class="bar"></div>
+                <div class="bar"></div>   
+                <div class="bar"></div>
+            </div>
+ 
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" aria-label="Navigate to Home">Home</a>
+                <a href="directory.html" aria-label="Navigate to Directory"> Business Directory</a>
+                <a href="#" aria-label="Navigate to About Us">Discover</a>
+                <a href="#" aria-label="Navigate to Contact Us">Join</a>
+            </div>
+            
+        </nav>
+    </header>
+
+    <main>
+        
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-small.webp" media="(max-width: 500px)">
+                <source srcset="images/hero-medium.webp" media="(max-width: 1000px)">
+            </picture>
+
+        </div>
+        
+        <div class="section-grid">
+            <section class="current-events">
+                <h3 class="section-header">Current Events</h3>
+                <div class="events">
+                    <div class="event-card">
+                        <div class="event-info">
+                          <h1>Chamber of Commerce</h1>
+                            <p>Web Development Bootsrap</p>
+                            <p class="date">February 2, 2025 | 5.00pm</p>
+                            <a href="#">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="current-weather">
+                <h3 class="section-header">Current Weather</h3>
+                <div id="current-weather-container">
+                    <img id="weather-icon" src="script" alt="weather icon">
+                    <p id="current-temp"></p>
+                    <p id="weather-desc"></p>
+                    <p id="humidity"></p>
+                    <p id="sunrise"></p>
+                    <p id="sunset"></p>
+                </div>
+            </section>
+
+            <section class="weather-forecast">
+                <h3 class="section-header">Weather Forecast</h3>
+                <div id="weather-forecast-container">
+                    <p id="forecast-today"></p>
+                    <p id="forecast-tomorrow"></p>
+                    <p id="forecast-dayafter"></p>
+                </div>
+            </section>
+        </div>
+        <section class="company-spotlights">
+            <h4>Business Spotlights</h4>
+            <div id="spotlights-container">
+
+
+            </div>
+        </section>
+    </main>
+
+    <footer >
+        <div class="down">
+            <div class="contact">
+                <p>Chamber of Commerce</p>
+                <div class="contact-info">
+                    <p></p>
+                    <p>Mubbala Phillip, Kampala-Uganda</p>
+                    <p>info@buenosaireschamber.com</p>
+                    <p>(+256) 7048-682-11</p>
+                </div>
+            </div>
+    
+            <div class="inks">
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+    
+            <div class="copyright">
+                <p>WDD231 Class Project</p>
+                <p>Mubbala Phillip</p>
+                <p>&copy;<span id="currentyear"></span>Chamber of Commerce</p>
+                <p id="lastModified"></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

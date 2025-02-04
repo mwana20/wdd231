@@ -298,7 +298,7 @@ a:hover {
 /* Background color for section headers */
 .section-header {
   background-color: #42a5f5;         /* Blue background for section header */
-  color: #000;                      /* White text for contrast */
+  color: rgb(4, 4, 4);                      /* White text for contrast */
   padding: 10px;                     /* Padding inside the header */
   border-radius: 5px;                /* Rounded corners for the header */
 }

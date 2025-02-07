@@ -422,7 +422,7 @@ header h1 {
     max-width: 800px;
     margin: 2rem auto;
     padding: 2rem;
-    background: linear-gradient(145deg, #ffffff, #f9f9f9);
+    background: linear-gradient(145deg, white, #f9f9f9);
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     border: 1px solid #e0e0e0;
@@ -698,6 +698,16 @@ header h1 {
   
   
   @media (max-width: 768px) {
+
+    .nav-menu ul {
+      display:none;
+
+  }
+
+    .hamburger-menu {
+      display: block;
+
+  }
     .hamburger {
       display: flex;
     }

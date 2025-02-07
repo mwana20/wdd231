@@ -85,16 +85,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       });
   }
 
-  // Hamburger menu toggle for mobile navigation
-  const hamburger = document.querySelector(".hamburger-menu"); // Fixed class name
-  const mobileNav = document.querySelector(".nav-links"); // Use nav-links for mobile menu
-
-  if (hamburger && mobileNav) {
-      hamburger.addEventListener("click", () => {
-          mobileNav.classList.toggle("open");
-          mobileNav.classList.toggle("hidden");
-      });
-  }
+ 
 
   // Set footer year
   const currentYear = document.getElementById("currentYear");

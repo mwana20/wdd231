@@ -10,29 +10,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,400;0,700;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
-    <title>WDD 231: Web Frontend Development I</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Home - MUbbala Phillip Chamber of Commerce</title>
 </head>
 <body>
-   <header>
-    <div class="hed">
-        <img src="images/CDF.webp" alt="Image of Phillip Kenneth Mubbala">
-        <h1>Phillip K . Mubbala</h1>
-    </div>
-    <nav>
-
-        <div id="hum" class="navbar">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Chamber</a></li>
-                <li><a href="#">GitHub Profile</a></li>
-                <li><a href="#">LinkedIn</a></li>
-            </ul>
-            <button  id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
-        </div>
-    </nav>
-   </header> 
-
-   <main>
+    <!-- Include the shared header -->
+    <header class="header">
+        <img src="images/logo.png" alt="Buenos Aires Chamber Logo">
+        <nav>
+            <div class="hamburger-menu" id="hamburgerMenu">
+                <div class="bar"></div>
+                <div class="bar"></div>   
+                <div class="bar"></div>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" aria-label="Navigate to Home">Home</a>
+                <a href="directory.html" aria-label="Navigate to Directory">Directory</a>
+                <a href="discover.html" aria-label="Navigate to About Us">About</a>
+                <a href="join.html" aria-label="Navigate to Contact Us">Join</a>
+            </div>
+        </nav>
+    </header>
+    <main>
 
     <section class="sec">
         <div class="table1">
@@ -82,11 +81,11 @@
 
    </main>
 
-   <footer>
+   <footer class="footer">
     <p>&copy; <span id="currentyear"></span> Mubbala Phillip Kenneth, Uganda  <img src="images/pearl.jpg" alt="pearl of Africa" ></p>
     <p id="lastModified"></p>  
    </footer>
 
-   <script src="scripts/index.js"></script>
+   <script src="scripts/index.js" defer></script>
 </body>
 </html>

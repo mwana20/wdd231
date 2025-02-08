@@ -57,16 +57,14 @@ a:hover {
 
 .hamburger-menu {
   display: none;
-  flex-direction: column;
   cursor: pointer;
 }
 
 .hamburger-menu .bar {
   width: 25px;
   height: 3px;
-  background-color: var(--text-color);
-  margin: 3px 0;
-  transition: 0.4s;
+  background-color: #333;
+  margin: 5px 0;
 }
 
 .header nav a {
@@ -541,5 +539,39 @@ body.menu-open {
       right: 10px;
       padding: 10px 15px;
       font-size: 0.9rem;
+  }
+}
+
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger-menu .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 5px 0;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links a {
+  margin: 0 10px;
+}
+
+@media (max-width: 768px) {
+  .hamburger-menu {
+    display: block;
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+  }
+  .nav-links.show {
+    display: flex;
   }
 }

@@ -289,12 +289,11 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-    const hamburgerMenu = document.getElementById('hamburgerMenu');
-    const navLinks = document.getElementById('navLinks');
+  const hamburgerMenu = document.getElementById('hamburgerMenu');
+  const navLinks = document.getElementById('navLinks');
 
-    hamburgerMenu.addEventListener('click', function() {
-        hamburgerMenu.classList.toggle('active');
-        navLinks.classList.toggle('active');
-    });
+  hamburgerMenu.addEventListener('click', function() {
+    hamburgerMenu.classList.toggle('active');
+    navLinks.classList.toggle('active');
+  });
 });
-s

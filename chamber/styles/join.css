@@ -57,6 +57,20 @@ header h1 {
     display: flex;
     flex-direction: column;
 }
+.nav-links {
+  display: flex; /* Makes the links appear in a row */
+  justify-content: space-between; /* Distributes links evenly */
+  align-items: center; /* Aligns items vertically */
+  gap: 20px; /* Adds spacing between links */
+}
+
+.nav-links a {
+  color: black; /* Sets text color to black */
+  text-decoration: none; /* Removes underline */
+  font-size: 18px; /* Adjusts font size */
+  font-weight: bold; /* Makes text bold */
+}
+
 
 /* Navbar */
 .nav-menu ul {
@@ -67,7 +81,7 @@ header h1 {
 }
 
 .nav-menu a {
-    color: var(--text2-color);
+    color: blue;
     text-decoration: none;
 }
 
@@ -87,6 +101,32 @@ header h1 {
     position: absolute;
     top: 1rem;
     right: 1rem;
+}
+
+/* Hide nav-links by default */
+.nav-links {
+    display: none;
+}
+
+/* Show nav-links when hamburger menu is active */
+.nav-links.active {
+    display: block;
+}
+
+.hamburger-menu {
+    cursor: pointer;
+}
+
+.hamburger-menu .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+.hamburger-menu.active .bar {
+    background-color: #fff; /* Change color when active */
 }
   
   /* Hero Section */
@@ -800,3 +840,15 @@ header h1 {
       font-size: 0.9rem;
     }
   }
+
+  @media screen and (min-width: 768px) {
+    /* Apply styles for medium screens and above */
+    .nav-menu ul {
+        display: flex;
+        gap: 2rem;
+    }
+  
+    .hamburger-menu {
+        display: none;
+    }
+}

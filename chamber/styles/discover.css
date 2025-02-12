@@ -122,3 +122,46 @@
 .card-content button:hover {
     background-color: #1a365d;
 }
+
+/* Default styles for large screens */
+.nav-links {
+    display: flex; /* Show nav-links on large screens */
+    list-style: none;
+    gap: 2rem;
+}
+
+.hamburger-menu {
+    display: none; /* Hide hamburger menu on large screens */
+}
+
+/* Styles for small screens */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide nav-links on small screens */
+        flex-direction: column;
+    }
+
+    .nav-links.active {
+        display: flex; /* Show nav-links when hamburger menu is active */
+    }
+
+    .hamburger-menu {
+        display: block; /* Show hamburger menu on small screens */
+    }
+}
+
+.hamburger-menu {
+    cursor: pointer;
+}
+
+.hamburger-menu .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+.hamburger-menu.active .bar {
+    background-color: #fff; /* Change color when active */
+}

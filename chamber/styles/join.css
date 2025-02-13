@@ -105,7 +105,7 @@ header h1 {
 
 /* Hide nav-links by default */
 .nav-links {
-    display: none;
+    display:flex;
 }
 
 /* Show nav-links when hamburger menu is active */
@@ -851,4 +851,83 @@ header h1 {
     .hamburger-menu {
         display: none;
     }
+}
+
+/* Default styles for large screens */
+.nav-links {
+    display: flex; /* Show nav-links on large screens */
+    list-style: none;
+    gap: 2rem;
+}
+
+.hamburger-menu {
+    display: none; /* Hide hamburger menu on large screens */
+}
+
+/* Styles for small screens */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide nav-links on small screens */
+        flex-direction: column;
+    }
+
+    .nav-links.active {
+        display: flex; /* Show nav-links when hamburger menu is active */
+    }
+
+    .hamburger-menu {
+        display: block; /* Show hamburger menu on small screens */
+    }
+}
+
+.hamburger-menu {
+    cursor: pointer;
+}
+
+.hamburger-menu .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+.hamburger-menu.active .bar {
+    background-color: #fff; /* Change color when active */
+}
+
+/* Existing styles */
+.hero-content h1 {
+    font-size: 50px;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+}
+
+.hero-button {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 15px 20px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: var(--transition);
+}
+
+.hero-button:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+
+/* Content Section */
+.content {
+    padding: 20px;
 }

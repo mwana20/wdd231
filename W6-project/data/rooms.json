@@ -1,0 +1,41 @@
+{
+    "rooms": [
+      {
+        "id": 1,
+        "name": "Deluxe Suite",
+        "description": "Spacious suite with ocean view and private balcony",
+        "price": 299,
+        "image": "images/deluxe-suite.jpg",
+        "amenities": [
+          "King-size bed",
+          "Ocean view",
+          "Private balcony",
+          "Mini bar",
+          "En-suite bathroom"
+        ],
+        "maxOccupancy": 2
+      },
+      {
+        "id": 2,
+        "name": "Family Room",
+        "description": "Perfect for families, featuring two bedrooms and a living area",
+        "price": 399,
+        "image": "images/family-room.jpg",
+        "amenities": [
+          "Two bedrooms",
+          "Living area",
+          "Kitchen",
+          "Children's play area",
+          "Multiple bathrooms"
+        ],
+        "maxOccupancy": 4
+      },
+      {
+        "id": 3,
+        "name": "Executive Suite",
+        "description": "Luxury suite with premium amenities and city view",
+        "price": 499
+      }
+
+    ]
+}

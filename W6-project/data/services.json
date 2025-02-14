@@ -1,0 +1,71 @@
+{
+    "services": [
+      {
+        "id": "spa",
+        "name": "Luxury Spa",
+        "description": "Rejuvenate your body and mind with our premium spa treatments",
+        "image": "images/spa.jpg",
+        "hours": "9:00 AM - 8:00 PM",
+        "price": 75,
+        "features": [
+          "Massage therapy",
+          "Facial treatments",
+          "Body wraps",
+          "Aromatherapy"
+        ]
+      },
+      {
+        "id": "restaurant",
+        "name": "Fine Dining Restaurant",
+        "description": "Experience exquisite cuisine with our award-winning chefs",
+        "image": "images/restaurant.jpg",
+        "hours": "7:00 AM - 11:00 PM",
+        "features": [
+          "International cuisine",
+          "Local specialties",
+          "Wine pairing",
+          "Private dining"
+        ]
+      },
+      {
+        "id": "fitness",
+        "name": "Fitness Center",
+        "description": "State-of-the-art equipment and professional trainers",
+        "image": "images/fitness.jpg",
+        "hours": "6:00 AM - 10:00 PM",
+        "features": [
+          "Modern equipment",
+          "Personal training",
+          "Group classes",
+          "Yoga studio"
+        ]
+      },
+      {
+        "id": "pool",
+        "name": "Swimming Pool",
+        "description": "Relax by our infinity pool with stunning views",
+        "image": "images/pool.jpg",
+        "hours": "7:00 AM - 7:00 PM",
+        "features": [
+          "Infinity pool",
+          "Kids pool",
+          "Pool bar",
+          "Sundeck"
+        ]
+      },
+      {
+        "id": "conference",
+        "name": "Conference Facilities",
+        "description": "Professional meeting spaces for all your business needs",
+        "image": "images/conference.jpg",
+        "hours": "8:00 AM - 6:00 PM",
+        "price": 200,
+        "features": [
+          "Multiple room sizes",
+          "AV equipment",
+          "Catering services",
+          "Business center"
+        ]
+      }
+    ]
+  }

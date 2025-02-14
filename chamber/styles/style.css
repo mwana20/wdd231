@@ -11,9 +11,9 @@
 
 /* Global Styles */
 .fa-rotate-by {
-  --fa-rotate-angle: 0deg; /* Use 0 degrees instead of 'none' */
- 
+  transform: rotate(calc(var(--fa-rotate-angle, 0) * 1deg));
 }
+
 
 body, html {
   font-family: var(--font-family);

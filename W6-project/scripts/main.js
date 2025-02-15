@@ -1,16 +1,19 @@
-// Fetch and display featured rooms
 async function loadFeaturedRooms() {
     try {
-        const response = await fetch('data/rooms.json');
-        const rooms = await response.json();
-        const featuredRooms = rooms.slice(0, 3); // Display first 3 rooms
+        const response = await fetch('./data/rooms.json');
+        if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
 
+        const data = await response.json(); // Updated variable to match JSON structure
+        const rooms = data.rooms; // Access the rooms array from the "rooms" key
         const container = document.getElementById('featured-rooms-container');
-        featuredRooms.forEach(room => {
+        container.innerHTML = '';
+
+        // Populate the specified 'featured-rooms' section with room cards
+        rooms.forEach(room => {
             const roomCard = document.createElement('div');
             roomCard.className = 'room-card';
             roomCard.innerHTML = `
-                <img src="${room.image}" alt="${room.name}" class="animate-on-scroll">
+                <img src="${room.image}" alt="${room.name}" class="room-image animate-on-scroll">
                 <div class="room-info">
                     <h3>${room.name}</h3>
                     <p>${room.description}</p>
@@ -25,7 +28,12 @@ async function loadFeaturedRooms() {
     }
 }
 
-// Initialize
-document.addEventListener('DOMContentLoaded', () => {
-    loadFeaturedRooms();
-});
+document.addEventListener('DOMContentLoaded', loadFeaturedRooms);
+
+// Insert images into highlights section
+document.getElementById('highlight-img-1').src = 'images/prime-location.jpg';
+document.getElementById('highlight-img-2').src = 'images/luxury-amenities.jpg';
+document.getElementById('highlight-img-3').src = 'images/24-7-service.jpg';
+document.getElementById('highlight-img-4').src = 'images/free-wifi.jpg';
+document.getElementById('highlight-img-5').src = 'images/exclusive-offers.jpg';
+document.getElementById('highlight-img-6').src = 'images/pet-friendly.jpg';

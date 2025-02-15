@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Mwanaweika Hotel - Welcome</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/responsive.css">
@@ -39,7 +40,7 @@
         <section class="featured-rooms">
             <h2>Featured Rooms</h2>
             <div class="room-grid" id="featured-rooms-container">
-                <!-- Rooms will be populated from rooms.json -->
+              
             </div>
         </section>
 
@@ -47,34 +48,81 @@
             <h2>Why Choose Us</h2>
             <div class="highlights-grid">
                 <div class="highlight-item">
-                    <h3>Prime Location</h3>
-                    <p>Situated in the heart of the city with easy access to major attractions</p>
+                    <a href="#">
+                        <img id="highlight-img-1" alt="Prime Location">
+                        <h3>Prime Location</h3>
+                        <p>Situated in the heart of the city with easy access to major attractions</p>
+                    </a>
                 </div>
                 <div class="highlight-item">
-                    <h3>Luxury Amenities</h3>
-                    <p>State-of-the-art facilities ensuring a comfortable stay</p>
+                    <a href="#">
+                        <img id="highlight-img-2" alt="Luxury Amenities">
+                        <h3>Luxury Amenities</h3>
+                        <p>State-of-the-art facilities ensuring a comfortable stay</p>
+                    </a>
                 </div>
                 <div class="highlight-item">
-                    <h3>24/7 Service</h3>
-                    <p>Round-the-clock customer service to assist you</p>
+                    <a href="https://freerangestock.com/search/all/waiters-at-night">
+                        <img id="highlight-img-3" alt="24/7 Service">
+                        <h3>24/7 Service</h3>
+                        <p>Round-the-clock customer service to assist you</p>
+                    </a>
+                </div>
+                <div class="highlight-item">
+                    <a href="https://freerangestock.com/search/all/Hotel-free-wifi">
+                        <img id="highlight-img-4" alt="Free Wi-Fi">
+                        <h3>Free Wi-Fi</h3>
+                        <p>Stay connected with complimentary high-speed internet throughout the hotel</p>
+                    </a>
+                </div>
+                <div class="highlight-item">
+                    <a href="https://freerangestock.com/search/all/exclusive-offers">
+                        <img id="highlight-img-5" alt="Exclusive Offers">
+                        <h3>Exclusive Offers</h3>
+                        <p>Enjoy special deals and packages available only to our guests</p>
+                    </a>
+                </div>
+                <div class="highlight-item">
+                    <a href="https://www.istockphoto.com/search/more-like-this/1387621664?assettype=image">
+                        <img id="highlight-img-6" alt="Pet-Friendly">
+                        <h3>Pet-Friendly</h3>
+                        <p>We welcome your furry friends with open arms, ensuring a pet-friendly stay</p>
+                    </a>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer>
+    <footer class="footer">
         <div class="footer-content">
-            <div class="footer-section">
+            <div class="footer-section contact">
                 <h3>Contact Us</h3>
                 <p>Email: info@mwanaweikahotel.com</p>
                 <p>Phone: +254 123 456 789</p>
             </div>
-            <div class="footer-section">
+            
+            <div class="footer-section quick-links">
                 <h3>Quick Links</h3>
                 <ul>
                     <li><a href="rooms.html">Book a Room</a></li>
                     <li><a href="services.html">Our Services</a></li>
                     <li><a href="contact.html">Get in Touch</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section about">
+                <h3>About Us</h3>
+                <p>Mwanaweika Hotel offers luxury experiences with a blend of modern comfort and traditional hospitality.</p>
+            </div>
+            
+            <div class="footer-section follow-us">
+                <h3>Follow Us</h3>
+                <p>Stay connected on our social platforms:</p>
+                <ul class="social-links">
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -86,5 +134,6 @@
     <script src="scripts/main.js"></script>
     <script src="scripts/menu.js"></script>
     <script src="scripts/animations.js"></script>
+
 </body>
 </html>

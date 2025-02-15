@@ -5,7 +5,7 @@
         "name": "Deluxe Suite",
         "description": "Spacious suite with ocean view and private balcony",
         "price": 299,
-        "image": "images/deluxe-suite.jpg",
+        "image": "images/Deluxe.jpg",
         "amenities": [
           "King-size bed",
           "Ocean view",
@@ -20,7 +20,7 @@
         "name": "Family Room",
         "description": "Perfect for families, featuring two bedrooms and a living area",
         "price": 399,
-        "image": "images/family-room.jpg",
+       "image": "images/Family Room.jpg",
         "amenities": [
           "Two bedrooms",
           "Living area",
@@ -34,6 +34,7 @@
         "id": 3,
         "name": "Executive Suite",
         "description": "Luxury suite with premium amenities and city view",
+        "image": "images/Executive Suite.jpg",
         "price": 499
       }
 

@@ -66,4 +66,11 @@
         grid-template-columns: 1fr;
     }
 
+    .contact-info{
+        flex-direction: column;
+
+    }
+    .info-card {
+        width: 100%;
+    }
 }

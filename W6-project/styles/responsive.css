@@ -1,5 +1,5 @@
 /* Responsive Design */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) { 
     .navbar {
         padding: 1rem;
     }
@@ -63,14 +63,42 @@
     }
 
     .footer-content {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    .footer-section {
+        min-width: 100%;
+        text-align: center;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+    
+    .footer h3 {
+        font-size: 1.1rem;
+    }
+    
+    .footer p {
+        font-size: 0.85rem;
+    }
+
+
+    .footer-content {
         grid-template-columns: 1fr;
     }
 
+/* Contact Page */
     .contact-info{
         flex-direction: column;
 
     }
     .info-card {
+        width: 100%;
+    }
+
+    .contact-form-container{
         width: 100%;
     }
 }

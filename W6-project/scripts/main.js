@@ -28,7 +28,78 @@ async function loadFeaturedRooms() {
     }
 }
 
-document.addEventListener('DOMContentLoaded', loadFeaturedRooms);
+document.addEventListener('DOMContentLoaded', () => {
+    loadFeaturedRooms();
+    setupSlideshows();
+});
+
+function setupSlideshows() {
+    const slideshowsData = {
+        'honeymoon-slideshow': [
+            { src: 'images/Romantic dinner.jpg', alt: 'Honeymoon 1' },
+            { src: 'images/Couples spa.jpg', alt: 'Honeymoon 2' },
+            { src: 'images/Late checkout.jpg', alt: 'Honeymoon 3' },
+            { src: 'images/honeymoon4.jpg', alt: 'Honeymoon 4' }
+        ],
+        'business-slideshow': [
+            { src: 'images/Business Package.jpg', alt: 'Business 1' },
+            { src: 'images/Conference.jpg', alt: 'Business 2' },
+            { src: 'images/internet.jpg', alt: 'Business 3' },
+            { src: 'images/Business.jpg', alt: 'Business 4' }
+        ]
+    };
+
+    Object.keys(slideshowsData).forEach(slideshowId => {
+        const slideshowContainer = document.getElementById(slideshowId);
+        const slides = slideshowsData[slideshowId];
+
+        slides.forEach(slide => {
+            const slideDiv = document.createElement('div');
+            slideDiv.className = 'slide fade';
+            slideDiv.innerHTML = `<img src="${slide.src}" alt="${slide.alt}">`;
+            slideshowContainer.appendChild(slideDiv);
+        });
+
+        const prevButton = document.createElement('a');
+        const nextButton = document.createElement('a');
+
+        prevButton.className = 'prev';
+        prevButton.innerHTML = '&#10094;';
+        nextButton.className = 'next';
+        nextButton.innerHTML = '&#10095;';
+
+        slideshowContainer.appendChild(prevButton);
+        slideshowContainer.appendChild(nextButton);
+
+        let slideIndex = 0;
+
+        function showSlides(n) {
+            const slides = slideshowContainer.querySelectorAll('.slide');
+            if (n >= slides.length) { slideIndex = 0 }
+            if (n < 0) { slideIndex = slides.length - 1 }
+            slides.forEach(slide => slide.style.display = 'none');
+            slides[slideIndex].style.display = 'flex'; /* Use flex to center the image */
+        }
+
+        function nextSlide() {
+            showSlides(slideIndex += 1);
+        }
+
+        function prevSlide() {
+            showSlides(slideIndex -= 1);
+        }
+
+        prevButton.addEventListener('click', prevSlide);
+        nextButton.addEventListener('click', nextSlide);
+
+        showSlides(slideIndex);
+
+        // Automatically change slides every 3 seconds
+        setInterval(() => {
+            nextSlide();
+        }, 3000);
+    });
+}
 
 // Insert images into highlights section
 document.getElementById('highlight-img-1').src = 'images/prime-location.jpg';

@@ -152,6 +152,63 @@ main h2 {
     object-fit: cover;
 }
 
+/* Slideshow Styles */
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    display: flex;
+}
+
+.slide img {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+/* Navigation buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
 /* Footer */
 footer {
     background-color: #333;
@@ -278,4 +335,44 @@ input:focus, select:focus, textarea:focus {
 
 .cta-button:hover {
     background: #0056b3;
+}
+/* Service Page */
+.offer-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.offer-card li {
+    list-style: none;
+    margin: 5px 10px;
+}
+
+.slideshow-container {
+    padding-top: 5px;
+}
+
+.offer-card h3 {
+    margin-bottom: 0; /* Reduce bottom margin */
+}
+
+.slideshow-container {
+    margin-top: 0; /* Remove any top margin */
+}
+
+/* New CSS for content-flex */
+.content-flex {
+    display: flex;
+    align-items: center;
+}
+
+.content-flex p {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.content-flex .slideshow-container {
+    flex: 1;
 }

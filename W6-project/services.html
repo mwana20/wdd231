@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Services - Mwanaweika Hotel</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/responsive.css">
 </head>
 <body>
-    <header>
+    <header class="service">
         <!-- Same navigation as other pages -->
         <nav class="navbar">
             <div class="logo">
@@ -29,7 +31,7 @@
     </header>
 
     <main class="services-page">
-        <section class="page-header">
+        <section class="hero">
             <h2>Our Services</h2>
             <p>Experience luxury and comfort with our premium services</p>
         </section>
@@ -39,10 +41,19 @@
         </section>
 
         <section class="special-offers">
-            <h3>Special Packages</h3>
+            <h2>Special Packages</h2>
             <div class="offers-grid">
                 <div class="offer-card">
-                    <h4>Honeymoon Package</h4>
+                    <div class="content1">
+                        <h3>Honeymoon Package</h3>
+                        <p>Our Honeymoon Package offers an enchanting experience for newlyweds seeking a perfect start to their lifelong journey together. Delight in a carefully curated experience that blends romance, relaxation, and unforgettable moments.</p>
+                        <p>From luxurious accommodations adorned with romantic decor to personalized services such as breakfast in bed and private dinners, every detail is designed to enhance your bond and create lasting memories.</p>
+                        <p>Enjoy exclusive amenities including spa treatments for couples, scenic excursions, and intimate settings that foster connection. Our Honeymoon Package ensures that every moment is filled with love, comfort, and joy, making your honeymoon truly special.</p>
+                        <div class="slideshow-container" id="honeymoon-slideshow">
+                            <!-- Images -->
+                        </div> 
+                    </div>
+                    
                     <ul>
                         <li>Romantic dinner setup</li>
                         <li>Couples spa treatment</li>
@@ -50,14 +61,70 @@
                     </ul>
                     <a href="contact.html" class="cta-button">Enquire Now</a>
                 </div>
+                
                 <div class="offer-card">
-                    <h4>Business Package</h4>
+                    <div class="content1">
+                        <h3>Business Package</h3>
+                        <p>Our Business Package is tailored for professionals who seek seamless work and comfort while traveling. Offering state-of-the-art facilities, high-speed internet, and ergonomic workspaces, we ensure that your business needs are met with ease.</p>
+                        <p>Enjoy access to executive meeting rooms, 24/7 support services, and modern accommodations designed to enhance productivity while providing a relaxing atmosphere after a long day of work.</p>
+                        <p>With amenities like airport transfers, business center access, and curated meals to suit your busy schedule, our Business Package ensures a smooth and successful trip every time.</p>
+                        <div class="slideshow-container" id="business-slideshow">
+                      <!-- images -->
+                        </div>
+                    </div>
                     <ul>
                         <li>Conference room access</li>
                         <li>High-speed internet</li>
                         <li>Business center services</li>
                     </ul>
                     <a href="contact.html" class="cta-button">Enquire Now</a>
+                </div>
+                <div class="offer-card">
+                    <div class="content1">
+                        <h3>Swimming Pool Experience</h3>
+                        <p>Relax and unwind with our crystal-clear swimming pool experience, offering a refreshing retreat from the hustle and bustle of daily life. Enjoy leisurely swims, poolside service with delicious snacks and beverages, and a serene ambiance perfect for both families and individuals looking to soak up the sun. Our pool area is designed to provide the ultimate relaxation with shaded cabanas, comfortable loungers, and attentive staff ready to cater to your needs.</p>
+                        <div class="slideshow-container" id="pool-slideshow">
+                            <!-- Images -->
+                        </div>
+                        <ul>
+                            <li>Poolside bar and snacks</li>
+                            <li>Sun loungers and cabanas</li>
+                            <li>Swimming lessons available</li>
+                        </ul>
+                        <a href="contact.html" class="cta-button">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="offer-card">
+                    <div class="content1">
+                        <h3>Night Party Experience</h3>
+                        <p>Join us for vibrant night parties that come alive with energy and excitement, featuring live DJs spinning the latest hits, themed nights that transport you to different worlds, and a lively dance floor where you can dance the night away. Our night parties are perfect for letting loose, socializing, and making unforgettable memories under the stars. With signature cocktails crafted by expert mixologists and exclusive VIP lounges, the night is always young at Mwanaweika Hotel.</p>
+                        <div class="slideshow-container" id="night-party-slideshow">
+                            <!-- Images -->
+                        </div>
+                        <ul>
+                            <li>Live DJ performances</li>
+                            <li>Signature cocktails and drinks</li>
+                            <li>VIP lounge access</li>
+                        </ul>
+                        <a href="contact.html" class="cta-button">Book Your Night</a>
+                    </div>
+                </div>
+                
+                <div class="offer-card">
+                    <div class="content1">
+                        <h3>Safari Services</h3>
+                        <p>Embark on thrilling safari adventures that bring you face-to-face with Uganda’s breathtaking wildlife and stunning landscapes. Our expertly guided tours offer a deep dive into nature, with opportunities to see majestic lions, graceful giraffes, and a host of other exotic animals in their natural habitat. Stay in luxurious safari lodges that provide comfort and elegance amidst the wilderness, and choose from custom safari packages designed to suit your adventure spirit.</p>
+                        <div class="slideshow" id="safari-slideshow">
+                            <!-- Images -->
+                        </div>
+                        <ul>
+                            <li>Guided wildlife tours</li>
+                            <li>Luxury safari lodges</li>
+                            <li>Custom safari packages</li>
+                        </ul>
+                        <a href="contact.html" class="cta-button">Explore Safari</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -89,9 +156,10 @@
                 <h3>Follow Us</h3>
                 <p>Stay connected on our social platforms:</p>
                 <ul class="social-links">
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Twitter</a></li>
-                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
                 </ul>
             </div>
         </div>

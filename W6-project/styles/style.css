@@ -158,6 +158,7 @@ main h2 {
     width: 100%;
     max-width: 100%;
     overflow: hidden;
+    padding-top: 5px;
 }
 
 .slide {
@@ -337,42 +338,27 @@ input:focus, select:focus, textarea:focus {
     background: #0056b3;
 }
 /* Service Page */
-.offer-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 10px;
+.services-page p{
+margin-left: 250px;
+margin-bottom: 10px;
 }
 
-.offer-card li {
-    list-style: none;
-    margin: 5px 10px;
+.services-page h3{
+    margin-left: 650px;
+    font-size: 1.7rem;
 }
 
-.slideshow-container {
-    padding-top: 5px;
+.services-page li {
+    margin-left: 650px;
+    margin-top: 5px;
 }
 
-.offer-card h3 {
-    margin-bottom: 0; /* Reduce bottom margin */
-}
+.services-page a{
+    margin-left: 680px;
+    margin-bottom: 40px;
+    }
 
-.slideshow-container {
-    margin-top: 0; /* Remove any top margin */
-}
-
-/* New CSS for content-flex */
-.content-flex {
-    display: flex;
-    align-items: center;
-}
-
-.content-flex p {
-    flex: 1;
-    margin-right: 20px;
-}
-
-.content-flex .slideshow-container {
-    flex: 1;
-}
+    .p{
+        margin-left: 70px;
+    }
+    

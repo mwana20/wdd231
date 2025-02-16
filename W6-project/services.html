@@ -1,8 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Chamber Directory - Mubbala Phillip Chamber of Commerce">
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://mwana20.github.io/wdd231/chamber/images/logo.png"/>
+    <meta property="og:url" content="https://mwana20.github.io/wdd231/chamber/" />
+    <meta name="facebook:card" content="summary_large_image">
+    <meta name="description" content="website" />
+    <meta name="author" content="Mubbala Phillip">   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,400;0,700;1,500&display=swap" rel="stylesheet">
     <title>Our Services - Mwanaweika Hotel</title>
     <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -11,7 +21,6 @@
 </head>
 <body>
     <header class="service">
-        <!-- Same navigation as other pages -->
         <nav class="navbar">
             <div class="logo">
                 <h1>Mwanaweika Hotel</h1>
@@ -32,91 +41,137 @@
 
     <main class="services-page">
         <section class="hero">
-            <h2>Our Services</h2>
-            <p>Experience luxury and comfort with our premium services</p>
+            <div class="hero-content">
+                <h2>Hospitality & Elegance</h2>
+                <p>Experience the perfect blend of traditional hospitality and modern comfort</p>
+                <a href="rooms.html" class="cta-button">Book Now</a>
+            </div>
         </section>
 
-        <section class="services-grid" id="services-container">
-            <!-- Services will be populated from services.json -->
-        </section>
-
-        <section class="special-offers">
+        <!-- <section class="special-offers"> -->
             <h2>Special Packages</h2>
             <div class="offers-grid">
+                <!-- Honeymoon Package -->
                 <div class="offer-card">
                     <div class="content1">
-                        <h3>Honeymoon Package</h3>
-                        <p>Our Honeymoon Package offers an enchanting experience for newlyweds seeking a perfect start to their lifelong journey together. Delight in a carefully curated experience that blends romance, relaxation, and unforgettable moments.</p>
-                        <p>From luxurious accommodations adorned with romantic decor to personalized services such as breakfast in bed and private dinners, every detail is designed to enhance your bond and create lasting memories.</p>
-                        <p>Enjoy exclusive amenities including spa treatments for couples, scenic excursions, and intimate settings that foster connection. Our Honeymoon Package ensures that every moment is filled with love, comfort, and joy, making your honeymoon truly special.</p>
-                        <div class="slideshow-container" id="honeymoon-slideshow">
-                            <!-- Images -->
-                        </div> 
-                    </div>
-                    
-                    <ul>
-                        <li>Romantic dinner setup</li>
-                        <li>Couples spa treatment</li>
-                        <li>Late checkout</li>
-                    </ul>
-                    <a href="contact.html" class="cta-button">Enquire Now</a>
-                </div>
-                
-                <div class="offer-card">
-                    <div class="content1">
-                        <h3>Business Package</h3>
-                        <p>Our Business Package is tailored for professionals who seek seamless work and comfort while traveling. Offering state-of-the-art facilities, high-speed internet, and ergonomic workspaces, we ensure that your business needs are met with ease.</p>
-                        <p>Enjoy access to executive meeting rooms, 24/7 support services, and modern accommodations designed to enhance productivity while providing a relaxing atmosphere after a long day of work.</p>
-                        <p>With amenities like airport transfers, business center access, and curated meals to suit your busy schedule, our Business Package ensures a smooth and successful trip every time.</p>
-                        <div class="slideshow-container" id="business-slideshow">
-                      <!-- images -->
-                        </div>
-                    </div>
-                    <ul>
-                        <li>Conference room access</li>
-                        <li>High-speed internet</li>
-                        <li>Business center services</li>
-                    </ul>
-                    <a href="contact.html" class="cta-button">Enquire Now</a>
-                </div>
-                <div class="offer-card">
-                    <div class="content1">
-                        <h3>Swimming Pool Experience</h3>
-                        <p>Relax and unwind with our crystal-clear swimming pool experience, offering a refreshing retreat from the hustle and bustle of daily life. Enjoy leisurely swims, poolside service with delicious snacks and beverages, and a serene ambiance perfect for both families and individuals looking to soak up the sun. Our pool area is designed to provide the ultimate relaxation with shaded cabanas, comfortable loungers, and attentive staff ready to cater to your needs.</p>
-                        <div class="slideshow-container" id="pool-slideshow">
-                            <!-- Images -->
-                        </div>
-                        <ul>
-                            <li>Poolside bar and snacks</li>
-                            <li>Sun loungers and cabanas</li>
-                            <li>Swimming lessons available</li>
-                        </ul>
-                        <a href="contact.html" class="cta-button">Learn More</a>
+                        <!-- <div class="offer-content"> -->
+                            <div class="offer-text">
+                                <h3>Honeymoon Package</h3>
+                                <p>Our Honeymoon Package offers an enchanting experience for newlyweds seeking a perfect start to their lifelong journey together...</p>
+                                <p>From luxurious accommodations adorned with romantic decor to personalized services such as breakfast in bed and private dinners...</p>
+                                <p>Enjoy exclusive amenities including spa treatments for couples, scenic excursions, and intimate settings that foster connection...</p>
+                                <p>With every detail thoughtfully planned, this package ensures that your honeymoon is filled with unforgettable moments and absolute relaxation...</p>
+                                <p>The Honeymoon Package also includes romantic activities such as sunset cruises, nature walks, and couples' cooking classes...</p>
+                                <p>It’s more than just a getaway; it’s an opportunity to make memories that will last a lifetime, surrounded by luxury and romance...</p>
+
+                            </div>
+                            <div class="offer-images" id="honeymoon-slideshow">
+                                <!-- Images -->
+                            </div>
+                            <ul>
+                                <li>Romantic dinner setup</li>
+                                <li>Couples spa treatment</li>
+                                <li>Late checkout</li>
+                            </ul>
+                            <a href="contact.html" class="cta-button">Enquire Now</a>
+                        <!-- </div> -->
                     </div>
                 </div>
                 
+                <!-- Business Package -->
                 <div class="offer-card">
                     <div class="content1">
-                        <h3>Night Party Experience</h3>
-                        <p>Join us for vibrant night parties that come alive with energy and excitement, featuring live DJs spinning the latest hits, themed nights that transport you to different worlds, and a lively dance floor where you can dance the night away. Our night parties are perfect for letting loose, socializing, and making unforgettable memories under the stars. With signature cocktails crafted by expert mixologists and exclusive VIP lounges, the night is always young at Mwanaweika Hotel.</p>
-                        <div class="slideshow-container" id="night-party-slideshow">
-                            <!-- Images -->
+                        <!-- <div class="offer-content"> -->
+                            <div class="offer-text">
+                                <h3>Business Package</h3>
+                                <p>Our Business Package is tailored for professionals who seek seamless work and comfort while traveling...</p>
+                                <p>Enjoy access to executive meeting rooms, 24/7 support services, and modern accommodations designed to enhance productivity...</p>
+                                <p>With amenities like airport transfers, business center access, and curated meals to suit your busy schedule...</p>
+                                <p>In addition to all these services, our Business Package includes unlimited access to high-speed internet and the use of conference facilities...</p>
+                                <p>We understand the importance of balancing work with relaxation, which is why we offer on-site fitness centers and leisure activities after a long day of meetings...</p>
+                                <p>Our goal is to make your business trip as productive, comfortable, and stress-free as possible, ensuring that you have everything you need to succeed...</p>
+                            </div>
+                            <div class="offer-images" id="business-slideshow">
+                                <!-- images -->
+                            </div>
+                            <ul>
+                                <li>Conference room access</li>
+                                <li>High-speed internet</li>
+                                <li>Business center services</li>
+                            </ul>
+                            <a href="contact.html" class="cta-button">Enquire Now</a>
                         </div>
-                        <ul>
-                            <li>Live DJ performances</li>
-                            <li>Signature cocktails and drinks</li>
-                            <li>VIP lounge access</li>
-                        </ul>
-                        <a href="contact.html" class="cta-button">Book Your Night</a>
                     </div>
                 </div>
-                
+
+                <!-- Swimming Pool Experience -->
                 <div class="offer-card">
                     <div class="content1">
-                        <h3>Safari Services</h3>
-                        <p>Embark on thrilling safari adventures that bring you face-to-face with Uganda’s breathtaking wildlife and stunning landscapes. Our expertly guided tours offer a deep dive into nature, with opportunities to see majestic lions, graceful giraffes, and a host of other exotic animals in their natural habitat. Stay in luxurious safari lodges that provide comfort and elegance amidst the wilderness, and choose from custom safari packages designed to suit your adventure spirit.</p>
-                        <div class="slideshow" id="safari-slideshow">
-                            <!-- Images -->
+                        <!-- <div class="offer-content"> -->
+                            <div class="offer-text">
+                                <h3>Swimming Pool Experience</h3>
+                                <p>Relax and unwind with our crystal-clear swimming pool experience, offering a refreshing retreat from the hustle and bustle of daily life...</p>
+                                <p>Enjoy leisurely swims, poolside service with delicious snacks and beverages, and a serene ambiance perfect for both families and individuals...</p>
+                                <p>Our swimming pool area is equipped with comfortable sunbeds and umbrellas, ideal for lounging and enjoying the warm sun...</p>
+                                <p>The pool is also heated for a comfortable dip, regardless of the time of year, ensuring you can enjoy a relaxing swim at any time...</p>
+                                <p>We also offer swimming lessons for guests who wish to improve their skills or learn how to swim in a private and safe environment...</p>
+                                <p>For those looking for something extra special, we have poolside cabanas where you can relax in complete privacy while enjoying refreshing drinks...</p>
+                            </div>
+                            <div class="offer-images" id="pool-slideshow">
+                                <!-- Images -->
+                            </div>
+                            <ul>
+                                <li>Poolside bar and snacks</li>
+                                <li>Sun loungers and cabanas</li>
+                                <li>Swimming lessons available</li>
+                            </ul>
+                            <a href="contact.html" class="cta-button">Enquire Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Night Party Experience -->
+                <div class="offer-card">
+                    <div class="content1">
+                        <!-- <div class="offer-content"> -->
+                            <div class="offer-text">
+                                <h3>Night Party Experience</h3>
+                                <p>Join us for vibrant night parties that come alive with energy and excitement, featuring live DJs spinning the latest hits...</p>
+                                <p>Our night parties are perfect for letting loose, socializing, and making unforgettable memories under the stars...</p>
+                                <p>With our stunning outdoor venues, you can dance under the moonlight or enjoy the nightlife in a comfortable and lively atmosphere...</p>
+                                <p>We have exclusive VIP sections for those who prefer a more private experience, along with bottle service and gourmet appetizers...</p>
+                                <p>Our talented team ensures that the party atmosphere is electric, with themed nights, guest performers, and exciting contests...</p>
+                                <p>The energy, the music, and the crowd combine to create an unforgettable experience you’ll want to relive over and over...</p>
+                            </div>
+                            <div class="offer-images" id="night-party-slideshow">
+                                <!-- Images -->
+                            </div>
+                            <ul>
+                                <li>Live DJ performances</li>
+                                <li>Signature cocktails and drinks</li>
+                                <li>VIP lounge access</li>
+                            </ul>
+                            <a href="contact.html" class="cta-button">Book Your Night</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Safari Services -->
+                <div class="offer-card">
+                    <div class="content1">
+                        <!-- <div class="offer-content"> -->
+                            <div class="offer-text">
+                                <h3>Safari Services</h3>
+                                <p>Embark on thrilling safari adventures that bring you face-to-face with Uganda’s breathtaking wildlife...</p>
+                                <p>Stay in luxurious safari lodges that provide comfort and elegance amidst the wilderness...</p>
+                                <p>Our guided tours take you through national parks and reserves, where you can witness rare wildlife in their natural habitat...</p>
+                                <p>The Safari Services package includes transportation in well-equipped safari vehicles, expert guides, and catered meals in the wild...</p>
+                                <p>We also provide customized safari packages to suit your preferences, whether you want a short weekend getaway or a week-long adventure...</p>
+                                <p>Our goal is to provide an exceptional and safe safari experience that allows you to reconnect with nature and create lasting memories...</p>
+                            </div>
+                            <div class="offer-images" id="safari-slideshow">
+                                <!-- Images -->
+                            </div>
                         </div>
                         <ul>
                             <li>Guided wildlife tours</li>

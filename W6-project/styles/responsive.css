@@ -101,4 +101,7 @@
     .contact-form-container{
         width: 100%;
     }
+    .offer-card .offer-text {
+        margin-bottom: 30px; /* Ensures there's space between the paragraph and the list */
+    }
 }

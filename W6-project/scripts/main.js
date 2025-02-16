@@ -46,6 +46,24 @@ function setupSlideshows() {
             { src: 'images/Conference.jpg', alt: 'Business 2' },
             { src: 'images/internet.jpg', alt: 'Business 3' },
             { src: 'images/Business.jpg', alt: 'Business 4' }
+        ],
+        'pool-slideshow': [
+            { src: 'images/Business Package.jpg', alt: 'Business 1' },
+            { src: 'images/Conference.jpg', alt: 'Business 2' },
+            { src: 'images/internet.jpg', alt: 'Business 3' },
+            { src: 'images/Business.jpg', alt: 'Business 4' }
+        ],
+        'night-party-slideshow': [
+            { src: 'images/Business Package.jpg', alt: 'Business 1' },
+            { src: 'images/Conference.jpg', alt: 'Business 2' },
+            { src: 'images/internet.jpg', alt: 'Business 3' },
+            { src: 'images/Business.jpg', alt: 'Business 4' }
+        ],
+        'safari-slideshow': [
+            { src: 'images/Business Package.jpg', alt: 'Business 1' },
+            { src: 'images/Conference.jpg', alt: 'Business 2' },
+            { src: 'images/internet.jpg', alt: 'Business 3' },
+            { src: 'images/Business.jpg', alt: 'Business 4' }
         ]
     };
 

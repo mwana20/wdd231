@@ -13,93 +13,39 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,400;0,700;1,500&display=swap" rel="stylesheet">
-    <title>Contact Us - Mwanaweika Hotel</title>
+    <title>Attribute- Mwanaweika Hotel</title>
     <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/responsive.css">
 </head>
 <body>
+
     <header>
-        <!-- Same navigation as other pages -->
-        <nav class="navbar">
-            <div class="logo">
-                <h1>Mwanaweika Hotel</h1>
-            </div>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="rooms.html">Rooms</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>Image Sources and Attribution</h1>
+        <p>Below are the sources and attributions for the images used on this website. All images are sourced from Unsplash.</p>
     </header>
 
-    <main class="contact-page">
-        <section class="hero">
-            <div class="hero-content">
-                <h2>Contact Us</h2>
-                <p>Get in touch with us for any inquiries</p>
-                <a href="rooms.html" class="cta-button">Book Now</a>
-            </div>
-        </section>
+    <section class="image-source">
+        <h2>Deluxe Suite</h2>
+        <p>This image is used in the "Deluxe Suite" section of our site. The source of the image is:</p>
+        <p><strong>Image Source:</strong> <a href="https://unsplash.com/photos/XYZ123" target="_blank">Unsplash</a></p>
+        <p><strong>License:</strong> Free for commercial and personal use. No attribution required, though credit is appreciated.</p>
+    </section>
 
-        <section class="contact-content">
-            <div class="contact-info">
-                <div class="info-card">
-                    <h3>Location</h3>
-                    <p>123 Hotel Street</p>
-                    <p>Mukono,Uganda</p>
-                </div>
-                <div class="info-card">
-                    <h3>Phone</h3>
-                    <p>+256 123 456 789</p>
-                    <p>+256 987 654 321</p>
-                </div>
-                <div class="info-card">
-                    <h3>Email</h3>
-                    <p>info@mwanaweikahotel.com</p>
-                    <p>bookings@mwanaweikahotel.com</p>
-                </div>
-            </div>
+    <section class="image-source">
+        <h2>Standard Room</h2>
+        <p>This image is used in the "Standard Room" section of our site. The source of the image is:</p>
+        <p><strong>Image Source:</strong> <a href="https://unsplash.com/photos/ABC456" target="_blank">Unsplash</a></p>
+        <p><strong>License:</strong> Creative Commons Zero (CC0), free for commercial and personal use.</p>
+    </section>
 
-            <div class="contact-form-container">
-                <form id="contact-form" action="thankyou.html" method="GET">
-                    <div class="form-group">
-                        <label for="name">Full Name</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Phone</label>
-                        <input type="tel" id="phone" name="phone">
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <select id="subject" name="subject" required>
-                            <option value="">Select a subject</option>
-                            <option value="booking">Room Booking</option>
-                            <option value="inquiry">General Inquiry</option>
-                            <option value="feedback">Feedback</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="cta-button">Send Message</button>
-                </form>
-            </div>
-        </section>
-    </main>
+    <section class="image-source">
+        <h2>Beachside View</h2>
+        <p>This image is used in the "Beachside View" section of our site. The source of the image is:</p>
+        <p><strong>Image Source:</strong> <a href="https://unsplash.com/photos/DEF789" target="_blank">Unsplash</a></p>
+        <p><strong>License:</strong> Free for personal and commercial use with attribution.</p>
+    </section>
 
     <footer class="footer">
         <div class="footer-content">
@@ -142,11 +88,11 @@
             <p>&copy; <span id="currentYear"></span> <br> Last Updated: <span id="lastModified"></span></p>
         </div>
     </footer>
-
     <script src="scripts/main.js"></script>
     <script src="scripts/menu.js"></script>
-    <script src="scripts/contact.js"></script>
-    <script src="scripts/getdates.js"></script>
+    <script src="scripts/booking.js"></script>
     <script src="scripts/thankyou.js"></script>
+    <script src="scripts/getdates.js"></script>
+
 </body>
 </html>

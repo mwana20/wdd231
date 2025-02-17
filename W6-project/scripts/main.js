@@ -28,6 +28,7 @@ async function loadFeaturedRooms() {
     }
 }
 
+
 document.addEventListener('DOMContentLoaded', () => {
     loadFeaturedRooms();
     setupSlideshows();
@@ -153,5 +154,6 @@ document.addEventListener('DOMContentLoaded', function() {
             `;
             formDetails.appendChild(div);
         }
-    }
+    }  
 });
+

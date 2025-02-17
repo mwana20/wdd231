@@ -3,13 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Mwanaweika Hotel - Mubbala Phillip W6 Project">
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://mwana20.github.io/wdd231/W6-project/images/hotel.jpg"/>
+    <meta property="og:url" content="https://mwana20.github.io/wdd231/W6-project/" />
+    <meta name="facebook:card" content="summary_large_image">
+    <meta name="description" content="website" />
+    <meta name="author" content="Mubbala Phillip">   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,400;0,700;1,500&display=swap" rel="stylesheet">
     <title>Our Rooms - Mwanaweika Hotel</title>
+    <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/responsive.css">
 </head>
 <body>
-    <header class="rooms">
+    <header>
         <nav class="navbar">
             <div class="logo">
                 <h1>Mwanaweika Hotel</h1>
@@ -20,8 +31,8 @@
                 <span></span>
             </div>
             <ul class="nav-links">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="rooms.html">Rooms</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rooms.html" class="active">Rooms</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -29,9 +40,12 @@
     </header>
 
     <main class="rooms-page">
-        <section class="page-header">
-            <h2>Our Rooms</h2>
-            <p>Choose from our selection of luxurious accommodations</p>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Luxury Accommodations</h2>
+                <p>Experience comfort and elegance in our carefully designed rooms</p>
+                <a href="rooms.html" class="cta-button">Book Now</a>
+            </div>
         </section>
 
         <section class="room-filters">
@@ -52,8 +66,91 @@
         </section>
 
         <section class="rooms-grid" id="rooms-container">
-            <!-- Rooms will be populated from rooms.json -->
+            <!-- Example Room Card -->
+            <div class="room-card">
+                <div class="room-image" style="background-image: url('images/white.jpg')"></div>
+                <div class="room-details">
+                    <h3>Deluxe Suite</h3>
+                    <div class="room-price">$299 per night</div>
+                    <ul class="room-features">
+                        <li><i class="fas fa-bed"></i> King-size bed</li>
+                        <li><i class="fas fa-bath"></i> Private bathroom</li>
+                        <li><i class="fas fa-wifi"></i> Free Wi-Fi</li>
+                        <li><i class="fas fa-tv"></i> 50" Smart TV</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="room-card">
+                <div class="room-image" style="background-image: url('images/love.jpg')"></div>
+                <div class="room-details">
+                    <h3>Honey Moon Suite</h3>
+                    <div class="room-price">$399 per night</div>
+                    <ul class="room-features">
+                        <li><i class="fas fa-bed"></i> King-size bed</li>
+                        <li><i class="fas fa-bath"></i> Private bathroom</li>
+                        <li><i class="fas fa-wifi"></i> Free Wi-Fi</li>
+                        <li><i class="fas fa-tv"></i> 50" Smart TV</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="room-card">
+                <div class="room-image" style="background-image: url('images/zed.jpg')"></div>
+                <div class="room-details">
+                    <h3>Love Suite</h3>
+                    <div class="room-price">$499 per night</div>
+                    <ul class="room-features">
+                        <li><i class="fas fa-bed"></i> King-size bed</li>
+                        <li><i class="fas fa-bath"></i> Private bathroom</li>
+                        <li><i class="fas fa-wifi"></i> Free Wi-Fi</li>
+                        <li><i class="fas fa-tv"></i> 50" Smart TV</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="room-card">
+                <div class="room-image" style="background-image: url('images/win.jpg')"></div>
+                <div class="room-details">
+                    <h3>Deluxe Suite</h3>
+                    <div class="room-price">$599 per night</div>
+                    <ul class="room-features">
+                        <li><i class="fas fa-bed"></i> King-size bed</li>
+                        <li><i class="fas fa-bath"></i> Private bathroom</li>
+                        <li><i class="fas fa-wifi"></i> Free Wi-Fi</li>
+                        <li><i class="fas fa-tv"></i> 50" Smart TV</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="room-card">
+                <div class="room-image" style="background-image: url('images/pillow.jpg')"></div>
+                <div class="room-details">
+                    <h3>Family Suite</h3>
+                    <div class="room-price">$699 per night</div>
+                    <ul class="room-features">
+                        <li><i class="fas fa-bed"></i> King-size bed</li>
+                        <li><i class="fas fa-bath"></i> Private bathroom</li>
+                        <li><i class="fas fa-wifi"></i> Free Wi-Fi</li>
+                        <li><i class="fas fa-tv"></i> 50" Smart TV</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="room-card">
+                <div class="room-image" style="background-image: url('images/red.jpg')"></div>
+                <div class="room-details">
+                    <h3>Comfort Suite</h3>
+                    <div class="room-price">$799 per night</div>
+                    <ul class="room-features">
+                        <li><i class="fas fa-bed"></i> King-size bed</li>
+                        <li><i class="fas fa-bath"></i> Private bathroom</li>
+                        <li><i class="fas fa-wifi"></i> Free Wi-Fi</li>
+                        <li><i class="fas fa-tv"></i> 50" Smart TV</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Add more room cards here -->
         </section>
+
+        <div class="booking-button-container">
+            <a href="contact.html" class="continue-booking">Continue Booking</a>
+        </div>
 
         <section class="booking-info">
             <h3>Booking Information</h3>
@@ -108,12 +205,17 @@
             </div>
         </div>
         <div class="footer-bottom">
+            <a href="attribute.html">Attribute</a>
             <p>&copy; 2025 Mwanaweika Hotel. All rights reserved.</p>
+            <p>WDD231 Class Project</p>
+            <p>Mubbala Phillip</p>
+            <p>&copy; <span id="currentYear"></span> <br> Last Updated: <span id="lastModified"></span></p>
         </div>
     </footer>
 
     <script src="scripts/main.js"></script>
     <script src="scripts/menu.js"></script>
-    <script src="scripts/rooms.js"></script>
+    <script src="scripts/thankyou.js"></script>
+    <script src="scripts/getdates.js"></script>
 </body>
 </html>

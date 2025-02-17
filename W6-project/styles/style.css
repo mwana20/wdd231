@@ -42,7 +42,7 @@ body {
 }
 
 .nav-links a:hover {
-    color: #007bff;
+    color: #003d80; /* Dark blue */
 }
 
 .hamburger {
@@ -53,7 +53,7 @@ body {
 /* Hero Section */
 .hero {
     height: 80vh;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/hotel.jpg');
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../images/hotel.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -71,12 +71,19 @@ body {
 .hero h2 {
     font-size: 3rem;
     margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .cta-button {
     display: inline-block;
     padding: 1rem 2rem;
-    background-color: #007bff;
+    background-color: #003d80; /* Dark blue */
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -84,7 +91,7 @@ body {
 }
 
 .cta-button:hover {
-    background-color: #0056b3;
+    background-color: #002a5c; /* Darker blue */
 }
 
 /* Featured Rooms */
@@ -105,6 +112,8 @@ body {
     overflow: hidden;
     transition: transform 0.3s ease;
 }
+
+
 
 .room-card:hover {
     transform: translateY(-5px);
@@ -214,7 +223,7 @@ main h2 {
 
 /* Footer */
 footer {
-    background-color: #333;
+    background-color: #232323;
     color: #fff;
     padding: 3rem 2rem 1rem;
 }
@@ -228,6 +237,7 @@ footer {
 
 .footer-section h3 {
     margin-bottom: 1rem;
+    color: #fff;
 }
 
 .footer-section ul {
@@ -235,7 +245,7 @@ footer {
 }
 
 .footer-section a {
-    color: #fff;
+    color: #fff; 
     text-decoration: none;
 }
 
@@ -245,7 +255,7 @@ footer {
     border-top: 1px solid #555;
 }
 .footer-bottom a{
-    color: #9cc1e4;
+    color: #003d80; /* Dark blue */
 }
 
 /* Contact Page */
@@ -255,7 +265,7 @@ footer {
     flex-direction: column;
     gap: 30px;
     padding: 50px;
-    background-color: #f8f9fa;
+    background-color: #fff;
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.1);
     color: #333;
@@ -281,11 +291,13 @@ footer {
     margin-bottom: 10px;
     font-size: 20px;
     font-weight: 600;
+    color: #003d80; /* Dark blue */
 }
 
 .info-card p {
     margin: 5px 0;
     font-size: 16px;
+    color: #333;
 }
 
 .contact-form-container {
@@ -312,7 +324,7 @@ form {
 label {
     font-weight: 600;
     font-size: 16px;
-    color: #000;
+    color: #333;
 }
 
 input, select, textarea {
@@ -324,13 +336,13 @@ input, select, textarea {
 }
 
 input:focus, select:focus, textarea:focus {
-    border-color: #007bff;
+    border-color: #0056b3;
     outline: none;
 }
 
 .cta-button {
     padding: 12px;
-    background: #007bff;
+    background: #003d80; /* Dark blue */
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -340,7 +352,7 @@ input:focus, select:focus, textarea:focus {
 }
 
 .cta-button:hover {
-    background: #0056b3;
+    background: #002a5c; /* Darker blue */
 }
 /* Service Page */
 .services-page p{
@@ -397,7 +409,7 @@ margin-bottom: 10px;
     display: inline-block;
     margin-top: 2rem;
     padding: 1rem 2rem;
-    background-color: #007bff;
+    background-color: #003d80; /* Dark blue */
     color: white;
     text-decoration: none;
     border-radius: 4px;
@@ -405,7 +417,7 @@ margin-bottom: 10px;
 }
 
 .return-home:hover {
-    background-color: #0056b3;
+    background-color: #002a5c; /* Darker blue */
 }
  .hero h2 {
             font-size: 3rem;
@@ -483,7 +495,7 @@ margin-bottom: 10px;
         }
 
         .room-price {
-            color: #007bff;
+            color: #024083;
             font-size: 1.25rem;
             font-weight: bold;
             margin-bottom: 1rem;
@@ -502,7 +514,7 @@ margin-bottom: 10px;
 
         .room-features li i {
             margin-right: 0.5rem;
-            color: #007bff;
+            color: #023f80;
         }
 
         /* Booking button */
@@ -514,7 +526,7 @@ margin-bottom: 10px;
         .continue-booking {
             display: inline-block;
             padding: 1rem 2rem;
-            background-color: #007bff;
+            background-color: #023872;
             color: white;
             text-decoration: none;
             border-radius: 4px;
@@ -550,7 +562,7 @@ margin-bottom: 10px;
         }
 
         .info-item h4 {
-            color: #007bff;
+            color: #023973;
             margin-bottom: 1rem;
         }
         .room-card {
@@ -602,7 +614,7 @@ margin-bottom: 10px;
 .image-source h2 {
     font-size: 1.8rem;
     margin-bottom: 10px;
-    color: #007bff;
+    color: #003d80; /* Dark blue */
 }
 
 .image-source p {
@@ -611,7 +623,7 @@ margin-bottom: 10px;
 }
 
 .image-source a {
-    color: #007bff;
+    color: #003d80; /* Dark blue */
     text-decoration: none;
 }
 
@@ -620,7 +632,7 @@ margin-bottom: 10px;
 }
 
 .image-source:nth-child(1) {
-    background-color: #e3f2fd; /* Light blue */
+    background-color: #002a5c; /* Dark blue */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -633,7 +645,9 @@ margin-bottom: 10px;
     background-color: #fff3e0; /* Light orange */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
+.footer-bottom a{
+    color: aqua;
+}
 
 
 

@@ -126,3 +126,32 @@ document.getElementById('highlight-img-3').src = 'images/24-7-service.jpg';
 document.getElementById('highlight-img-4').src = 'images/free-wifi.jpg';
 document.getElementById('highlight-img-5').src = 'images/exclusive-offers.jpg';
 document.getElementById('highlight-img-6').src = 'images/pet-friendly.jpg';
+
+// Booking Page
+document.addEventListener('DOMContentLoaded', function() {
+    // Get URL parameters
+    const urlParams = new URLSearchParams(window.location.search);
+    const formDetails = document.getElementById('formDetails');
+    
+    // Map of parameter names to display labels
+    const paramLabels = {
+        'name': 'Name',
+        'email': 'Email',
+        'phone': 'Phone',
+        'subject': 'Subject',
+        'message': 'Message'
+    };
+
+    // Create HTML for each parameter
+    for (const [param, label] of Object.entries(paramLabels)) {
+        if (urlParams.has(param)) {
+            const div = document.createElement('div');
+            div.className = 'detail-item';
+            div.innerHTML = `
+                <span class="detail-label">${label}:</span>
+                <span class="detail-value">${urlParams.get(param)}</span>
+            `;
+            formDetails.appendChild(div);
+        }
+    }
+});

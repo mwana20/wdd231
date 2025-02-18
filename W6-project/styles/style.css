@@ -49,6 +49,7 @@ body {
 .hamburger {
     display: none;
     cursor: pointer;
+    cursor: pointer;
 }
 
 /* Hero Section */
@@ -568,27 +569,27 @@ margin-bottom: 10px;
         }
         .room-card {
             display: flex;
-            flex-direction: column; /* Stack the image above the content */
-            align-items: center; /* Center the content horizontally */
-            gap: 20px; /* Add spacing between the image and the details */
+            flex-direction: column;
+            align-items: center; 
+            gap: 20px; 
         }
         
         .room-image {
-            width: 100%; /* Make the image take up the full width */
-            height: 250px; /* Adjust the height of the image */
+            width: 100%; 
+            height: 250px; 
             background-size: cover;
             background-position: center;
         }
         
         .room-details {
-            width: 100%; /* Ensure the details section takes up full width */
-            text-align: center; /* Center the text */
+            width: 100%; 
+            text-align: center;
         }
         
         .room-features {
             list-style: none;
             padding: 0;
-            text-align: left; /* Align list items to the left */
+            text-align: left; 
             margin-top: 10px;
         }
         
@@ -599,7 +600,7 @@ margin-bottom: 10px;
         }
         
         .room-features i {
-            margin-right: 10px; /* Space between the icon and text */
+            margin-right: 10px; 
         }
 
 .image-source {
@@ -608,14 +609,14 @@ margin-bottom: 10px;
     margin: 20px auto;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    max-width: 800px; /* Ensure they don't have a width of 100% */
-    text-align: center; /* Center the content */
+    max-width: 800px; 
+    text-align: center; 
 }
 
 .image-source h2 {
     font-size: 1.8rem;
     margin-bottom: 10px;
-    color: #003d80; /* Dark blue */
+    color: #003d80; /* Navy blue */
 }
 
 .image-source p {
@@ -624,7 +625,7 @@ margin-bottom: 10px;
 }
 
 .image-source a {
-    color: #003d80; /* Dark blue */
+    color: #003d80; /* Navy blue */
     text-decoration: none;
 }
 
@@ -638,12 +639,12 @@ margin-bottom: 10px;
 }
 
 .image-source:nth-child(2) {
-    background-color: #f1f8e9; /* Light green */
+    background-color: #f1f8e9; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .image-source:nth-child(3) {
-    background-color: #fff3e0; /* Light orange */
+    background-color: #fff3e0; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 .footer-bottom a{
